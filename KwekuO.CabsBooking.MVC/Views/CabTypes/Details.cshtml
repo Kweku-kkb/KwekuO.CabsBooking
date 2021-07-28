@@ -1,0 +1,28 @@
+﻿@model ApplicationCore.Models.CabDetailsResponseModel
+
+@{ 
+    ViewData["Title"] = "Detail Page";
+}
+
+<div class="detail-page">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                @foreach (var bookings in Model.Bookings)
+                {
+                    <div>
+                        <div class="card border-primary mb-3" style="max-width: 20rem;">
+                            @*<div class="card-header">@bookings.Landmark</div>*@
+                            <div class="card-body">
+                                <h2 class="modal-header">Bookings</h2>
+                                <p class="card-text">@bookings.PickupAddress</p>
+                                <p class="card-text">@bookings.Status</p>
+                                <p class="card-text">@bookings.PickupDate</p>
+                                <p class="card-text">@bookings.ToPlace</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+    </div>
+</div>

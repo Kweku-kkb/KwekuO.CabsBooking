@@ -1,0 +1,10 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model ApplicationCore.Models.CabTypeModel
+<div class="card mb-4 shadow bg-light">
+    <a asp-controller="CabTypes" asp-action="Details" asp-route-id="@Model.CabTypeId">
+        <img src="@Model.CabTypeName" class="img-fluid" alt="@Model.CabTypeName" />
+    </a>
+</div>

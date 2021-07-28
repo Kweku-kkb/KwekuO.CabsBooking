@@ -1,0 +1,21 @@
+﻿@model List<ApplicationCore.Models.CabTypeModel>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="rounded">
+    <div class="container-fluid bg-light">
+        <h2>Choose a car</h2>
+        <div class="row">
+            @foreach (var cabType in Model)
+            {
+                <div class="card-body">
+                    <partial name="_CabType" model="cabType" />
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

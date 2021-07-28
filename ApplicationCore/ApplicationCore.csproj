@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\PlacesModel.cs" />
+    <Compile Remove="RepositoryInterfaces\IBookingsHistoryRepository.cs" />
+    <Compile Remove="ServiceInterfaces\IBookingsHistoryService.cs" />
+    <Compile Remove="ServiceInterfaces\IBookingsService.cs" />
+    <Compile Remove="ServiceInterfaces\IPlacesService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
